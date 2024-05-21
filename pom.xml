@@ -23,5 +23,6 @@
                 <version>3.3.2</version> <!-- Updated to a newer version -->
             </plugin>
         </plugins>
+    <finalName>java-hello-world</finalName>
   </build>
 </project>
