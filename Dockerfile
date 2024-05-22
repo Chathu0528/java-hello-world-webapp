@@ -5,10 +5,10 @@ FROM openjdk:8-jdk-alpine
 WORKDIR /app
 
 # Add the generated .war file to the container
-ADD target/java-hello-world-webapp-1.0-SNAPSHOT.war /app/java-hello-world-webapp-1.0-SNAPSHOT.war
+ADD target/java-hello-world.war /app/java-hello-world.war
 
 # Expose the port the app runs on
 EXPOSE 8080
 
 # Run the application
-ENTRYPOINT ["java", "-jar", "/app/java-hello-world-webapp-1.0-SNAPSHOT.war"]
+ENTRYPOINT ["java", "-jar", "/app/java-hello-world.war"]
